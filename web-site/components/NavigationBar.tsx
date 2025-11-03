@@ -19,10 +19,15 @@ import { SiGithub, SiYoutube, SiLinkedin } from "react-icons/si";
 
 
 // Navigation links array to be used in both desktop and mobile menus
-const navigationLinks = [
+const promotionLinks = [
   { href: "https://github.com/BattMoTeam", label: "", icon: SiGithub, active: false },
   { href: "https://www.youtube.com/@battmo5613", label: "", icon: SiYoutube, active: false },
   { href: "https://www.linkedin.com/company/battmo/", label: "", icon: SiLinkedin, active: false }
+]
+
+const navigationLinks = [
+  { href: "/our_team", label: "Our team", active: false },
+  { href: "/contact", label: "Contact", active: false },
 ]
 
 export default function NavigationBar() {
@@ -72,7 +77,7 @@ export default function NavigationBar() {
               <NavigationMenu className="max-w-none *:w-full">
                 <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
                   {navigationLinks.map((link, index) => {
-                    const Icon = link.icon
+                   
                     return (
                       <NavigationMenuItem key={index} className="w-full">
                         <NavigationMenuLink
@@ -80,11 +85,11 @@ export default function NavigationBar() {
                           className="flex-row items-center gap-2 py-1.5"
                           active={link.active}
                         >
-                          <Icon
+                          {/* <Icon
                             size={16}
                             className="text-muted-foreground/80"
                             aria-hidden="true"
-                          />
+                          /> */}
                           <span>{link.label}</span>
                         </NavigationMenuLink>
                       </NavigationMenuItem>
@@ -99,10 +104,33 @@ export default function NavigationBar() {
               <LogoLink />
           </div>
         </div>
-        {/* Middle area */}
+
+      
+        {/* Right area - page navigation*/}
+
         <NavigationMenu className="max-md:hidden">
-          <NavigationMenuList className="gap-10">
+          <NavigationMenuList className="gap-4">
             {navigationLinks.map((link, index) => {
+              return (
+                <NavigationMenuItem key={index}>
+                  <NavigationMenuLink
+                    active={link.active}
+                    href={link.href}
+                    className="text-foreground hover:text-primary active:text-primary flex-row items-center gap-2 py-1.5 font-medium"
+                  >
+                    <span>{link.label}</span>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              )
+            })}
+          </NavigationMenuList>
+        </NavigationMenu>
+
+        {/* Right area - socials navigation*/}
+        <div className="border-l ml-4 mr-0 text-center ">
+        <NavigationMenu className="max-md:hidden ml-20">
+          <NavigationMenuList className="gap-6">
+            {promotionLinks.map((link, index) => {
               const Icon = link.icon
               return (
                 <NavigationMenuItem key={index}>
@@ -119,8 +147,9 @@ export default function NavigationBar() {
             })}
           </NavigationMenuList>
         </NavigationMenu>
-
-      </div>
+        </div>
+    </div>
+      
     </header>
   )
 }
