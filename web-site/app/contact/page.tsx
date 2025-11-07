@@ -23,60 +23,11 @@ export default function ContactPage() {
       <p className="text-muted-foreground max-w-xl text-center mb-10">
         We'd love to hear from you! Whether you have a question about BattMo, want to collaborate, or just want to say hello — feel free to reach out.
       </p>
-
-      {/* <form 
-      className="w-full max-w-xl bg-card p-6 rounded-lg shadow-md space-y-4"
-      >
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium text-foreground">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            className="mt-1 block w-full rounded-md border border-border bg-background p-2"
-            required
-          />
-        </div>
-
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-foreground">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            className="mt-1 block w-full rounded-md border border-border bg-background p-2"
-            required
-          />
-        </div>
-
-        <div>
-          <label htmlFor="message" className="block text-sm font-medium text-foreground">
-            Message
-          </label>
-          <textarea
-            id="message"
-            rows={5}
-            className="mt-1 block w-full rounded-md border border-border bg-background p-2"
-            required
-          />
-        </div>
-
-        <button
-          type="submit"
-          className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition"
-        >
-          Send Message
-        </button>
-      </form> */}
-
-      
         {/* Address & Socials */}
       <div className="mt-5 text-center text-sm text-muted-foreground space-y-4">
         <h2 className="text-lg font-semibold text-foreground">E-mail</h2>
         <div className="mt-4 text-center text-lg text-muted-foreground text-underscore">
-        {" "}
+        address: {" "}
         <a
           href="mailto:battmo@sintef.no"
           className="text-primary underline hover:text-primary/80"
