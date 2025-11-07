@@ -21,7 +21,7 @@ export default function ContactPage() {
         Contact Us
       </h1>
       <p className="text-muted-foreground max-w-xl text-center mb-10">
-        We'd love to hear from you! Whether you have a question about BattMo, want to collaborate, or just want to say hello — feel free to reach out.
+        We&apos;d love to hear from you! Whether you have a question about BattMo, want to collaborate, or just want to say hello — feel free to reach out.
       </p>
         {/* Address & Socials */}
       <div className="mt-5 text-center text-sm text-muted-foreground space-y-4">
