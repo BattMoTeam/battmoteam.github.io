@@ -24,10 +24,8 @@ export default function ContactPage() {
         We'd love to hear from you! Whether you have a question about BattMo, want to collaborate, or just want to say hello — feel free to reach out.
       </p>
 
-      <form 
+      {/* <form 
       className="w-full max-w-xl bg-card p-6 rounded-lg shadow-md space-y-4"
-      action="https://formsubmit.co/lorena.hendrix@sintef.no"
-      method="POST"
       >
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-foreground">
@@ -71,20 +69,21 @@ export default function ContactPage() {
         >
           Send Message
         </button>
-      </form>
+      </form> */}
 
-      <div className="mt-12 text-center text-m text-muted-foreground text-underscore">
-        Or email us directly at{" "}
-        <a
-          href="mailto:simon.clark@sintef.no"
-          className="text-primary underline hover:text-primary/80"
-          >
-            simon.clark@sintef.no
-        </a>
-      </div>
       
         {/* Address & Socials */}
-      <div className="mt-12 text-center text-sm text-muted-foreground space-y-4">
+      <div className="mt-5 text-center text-sm text-muted-foreground space-y-4">
+        <h2 className="text-lg font-semibold text-foreground">E-mail</h2>
+        <div className="mt-4 text-center text-lg text-muted-foreground text-underscore">
+        {" "}
+        <a
+          href="mailto:battmo@sintef.no"
+          className="text-primary underline hover:text-primary/80"
+          >
+            battmo@sintef.no
+        </a>
+      </div>
         <div>
           <h2 className="text-lg font-semibold text-foreground mb-3">Address</h2>
           <p>SINTEF, Bratsbergvegen 5, 7031 Trondheim, Norway</p>

@@ -39,7 +39,7 @@ const cards = [
     short_description: "User-friendly web interface",
     description: "BattMoApp is an interactive web application designed for users who prefer graphical interfaces over coding. It offers an accessible way to perform battery simulations, making BattMo’s capabilities available to a broader audience.",
     imgSrc: imageURL,
-    href: "https://app.batterymodel.com/",
+    href: "https://app.battmo.org/",
     githubLink: "https://github.com/BattMoTeam/BattMoApp",
     docLink: "https://battmoteam.github.io/BattMo/app.html",
   },
