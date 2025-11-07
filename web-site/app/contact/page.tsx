@@ -34,6 +34,7 @@ export default function ContactPage() {
           >
             battmo@sintef.no
         </a>
+        </div>
       </div>
         <div>
           <h2 className="text-lg font-semibold text-foreground mb-3">Address</h2>
@@ -65,7 +66,6 @@ export default function ContactPage() {
             
             </div>
         </div>
-    </div>
-    </div>
+      </div>
   );
 }
