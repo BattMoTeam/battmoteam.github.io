@@ -26,8 +26,8 @@ export default function ContactPage() {
         {/* Address & Socials */}
       <div className="mt-5 text-center text-sm text-muted-foreground space-y-4">
         <h2 className="text-lg font-semibold text-foreground">E-mail</h2>
-        <div className="mt-4 text-center text-lg text-muted-foreground text-underscore">
-        address: {" "}
+        <div className="mt-0 text-center text-lg text-muted-foreground text-underscore">
+        {" "}
         <a
           href="mailto:battmo@sintef.no"
           className="text-primary underline hover:text-primary/80"
@@ -37,12 +37,12 @@ export default function ContactPage() {
         </div>
       </div>
         <div>
-          <h2 className="text-lg font-semibold text-foreground mb-3">Address</h2>
+          <h2 className="text-lg text-center font-semibold text-foreground mb-3 mt-5">Address</h2>
           <p>SINTEF, Bratsbergvegen 5, 7031 Trondheim, Norway</p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-foreground">Follow Us</h2>
+          <h2 className="text-lg text-center font-semibold text-foreground mt-5">Follow Us</h2>
           <div className="flex justify-center gap-4 mt-2">
             <NavigationMenu className="max-md:hidden">
           <NavigationMenuList className="gap-6">
